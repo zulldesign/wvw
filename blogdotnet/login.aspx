@@ -1,37 +1,57 @@
-﻿<%@ Page Language="C#" %>
+<%@ Page Language="VB" %>
+<!-- #INCLUDE FILE="include.aspx" -->
+<style>
+	.myfont {
+		background-color : White;
+		font-family : Arial, Helvetica, sans-serif;
+	}
+</style>
+<script language="VB" runat="server">
+    Sub Page_Load(sender As Object, e As EventArgs)
+	if request.querystring("logout") = 1 then
+		session.abandon
+		response.redirect("login.aspx")
+	end if
+	End Sub
+	
+	Sub btnLogin_OnClick(Src As Object, E As EventArgs)
+		If txtUsername.Text = user And txtPassword.Text = pass
+			''FormsAuthentication.RedirectFromLoginPage(txtUsername.Text, True)
+			session("loggedin") = "true"
+			response.redirect("list.aspx")
+		Else
+			lblInvalid.Text = "Login Failed"
+		End If
+	End Sub
+</script>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <script language="javascript" type="text/javascript">
-        var largh = screen.width;
-        var alt = screen.height;
-        if((largh>1550))
-        {
-        document.write(' <link rel="Stylesheet" href="./styles/style.css" type="text/css" media="all" />');
-        }
-        if((largh>1250)&&(largh<1550))
-        {
-        document.write('<link rel="Stylesheet" href="./styles/style1280.css" type="text/css" media="all" /> ');
-        }
-        
-    </script>
+<html>
+<head>
+<title>Login</title>
 </head>
-<body>
-<div id="container">
-   <table id="tblg">
-   <!-- #include virtual="logo.html" -->
-   </table>
-     <form method="post" action="auth.aspx">
-    <table id="tblogin" width="300">
-    <tr align="center"><td colspan="2" class="tit">Do login</td></tr>
-    <tr><td>User id</td><td><input type="text" name="uid" /></td></td></tr>
-    <tr><td>Password</td><td><input type="password" name="pwd" /></td></tr>
-    <tr><td><input class="btn" type="submit" value="login" /></td></tr>
-    </table>
-    </form>
-    </div>
+<body class="myfont">
+
+<h2>Please Login</h2>
+
+<p>
+<asp:Label Id="lblInvalid" RunAt="server" Style="color: Red;" />
+</p>
+
+<form runat="server">
+<table>
+	<tr>
+		<td>Username:</td>
+		<td><asp:TextBox id="txtUsername" runat="server" size="11" class="myfont" /></td>
+	</tr>
+	<tr>
+		<td>Password:</td>
+		<td><asp:TextBox id="txtPassword" TextMode="password" runat="server" size="12" class="myfont" /></td>
+	</tr>
+</table>
+	<asp:Button id="btnLogin" runat="server" text="Login" OnClick="btnLogin_OnClick" class="myfont" />
+</form>
+
 </body>
 </html>
+
+

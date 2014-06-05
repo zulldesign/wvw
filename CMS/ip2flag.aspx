@@ -1,1 +1,0 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" Inherits="CMS.ip2flag" Codebehind="ip2flag.aspx.vb" %>
