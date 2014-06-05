@@ -1,0 +1,517 @@
+﻿body 
+{
+
+}
+
+img
+{
+border: 0px;
+}
+
+#container 
+{
+position: absolute;
+width: 70%;
+left: 15%;
+    }
+
+.rn
+{
+border-style: solid;
+border-width: thin;
+border-color: Green; 
+font-size: 14px;
+    }
+
+#tblg
+{
+position: absolute;
+top: 20px;
+left: 270px;  
+background-color: #FFFFE9;
+border-color: #717171;
+border-style: solid;
+border-width: thin;
+    }
+ 
+#tbarch
+{
+position: absolute;
+top: 520px;
+left: -100px; 
+width: 180px; 
+text-align: center;
+background-color: #FFFFE9;
+border-color: Green;
+border-style: solid;
+border-width: thin;
+ }
+    
+#latsx
+{
+position: absolute;
+top: 100px;
+left: -100px; 
+background-color: #FFFFE9; 
+border-style: solid;
+border-width: thin;
+border-color: Green;
+font-size: small;
+    }
+
+#latlogin
+{
+position:absolute;
+left: 770px;
+top: 100px; 
+background-color: #FFFFE9;
+border-style: solid;
+border-width: thin;
+border-color: Green;
+font-size: small;
+    }  
+    
+#tbuo
+{
+position: absolute;
+top: 620px;
+left: 770px;
+border-style: solid;
+border-color: Green;
+border-width: thin; 
+background-color: #FFFFE9;     
+        }    
+      
+#tbnews
+{
+position: absolute;    
+top: 100px;
+left: 90px;    
+background-color: #FFFFE9;
+border-style: solid;
+border-width: thin;
+border-color: Green;
+font-size: small;
+text-align: justify;
+    }
+
+#txtfc
+{
+border-style: solid;
+border-color: Green;
+border-width: thin;
+}    
+    
+a
+{
+color: Blue;
+font-weight: bolder;
+font-size: small;
+     }
+a:hover  
+{
+color:#FF7000;
+font-size: small;
+text-decoration: underline;    
+    }   
+
+.titn
+{
+background-image: url('../images/hmenutitn.jpg');
+color:White; 
+font-weight: bolder; 
+font-size: 14px; 
+padding: 10px;
+}
+
+.tit
+{
+background-image: url('../images/hmenu.jpg');
+color:White; 
+font-weight: bolder; 
+font-size: 14px; 
+    }  
+
+
+#tbnewsfeed
+{
+position: absolute;
+top: 600px;
+left: 70px;
+}
+
+#tbreg
+{
+position: absolute;
+top: 150px;
+left: 175px;  
+border-style: solid;
+border-color: Green;
+border-width: thin;  
+    }    
+    
+#btnreg
+{
+background-color: #181818;
+color: White;
+font-size: small;
+font-weight: bolder;    
+    }   
+#ru
+{
+background-color: Orange;
+color: White;    
+    }   
+#tbup
+{
+position: absolute;
+left: 770px;
+top: 350px;
+background-color: #FFFFE9;
+border-style: solid;
+border-width: thin;
+border-color: Green;
+font-size: small;
+    }
+#tbcat
+{
+position: absolute;
+left: 770px;
+top: 190px;
+background-color: #FFFFE9;
+border-style: solid;
+border-width: thin;
+border-color: Green;  
+font-size: small;
+    }                    
+.btn
+{
+background-color: #181818;
+color: white;
+font-size: small;
+font-weight: bolder;    
+    } 
+    
+ 
+       
+.tbf
+{
+position: absolute;
+left: 100px;
+top: 20px; 
+border-style: solid;
+border-color: Green;   
+    } 
+#tblogin
+{
+position: absolute;
+top: 150px;
+left: 275px;
+background-color: #FFFFE9;
+border-style: solid;
+border-width: thin;
+border-color: Green;  
+font-size: small;   
+    }  
+#tbcal
+{
+position: absolute;
+top: 300px;
+left: -100px; 
+      }  
+ 
+#tbric
+{
+position: absolute;
+top: 520px;
+left: 770px;
+background-color: #FFFFE9;
+border-style: solid;
+border-width: thin;
+border-color: Green; 
+      }  
+      
+.titart
+{
+background-color: Navy;
+color:White; 
+font-weight: bolder;  
+font-size: 14px;  
+padding: 10px;
+    } 
+    
+   
+    
+/* inizio css Tooltip */
+
+#dhtmltooltip{
+position: absolute;
+left: -300px;
+width: 80px;
+border: 1px solid black;
+padding: 2px;
+background-color: #1E1E1E;
+border-style: solid;
+border-color: Black;
+border-width: medium;
+font-size: small;
+color: White;
+visibility: hidden;
+z-index: 100;
+
+}
+
+#dhtmlpointer 
+{
+position: absolute;
+left: -300px;
+z-index: 101;
+visibility: hidden;
+}
+
+/*fine tooltip*/
+
+
+#aggc a
+{
+color: #FF7000;
+       }
+       
+#aggc a:hover
+{
+background-color: Green;
+color: White;    
+    }        
+
+#tbconf
+{
+position: absolute;
+top: 200px;
+left: 280px;
+background-color:  #FFFFE9;  
+border-style: solid;
+border-width: medium;
+border-color: Green;
+    } 
+#tblbl
+{
+position: absolute;
+top: 450px;
+left: 280px;
+    }  
+         
+#cal a:hover
+{
+background-color: blue;  
+    }    
+#rcpy
+{
+background-image: url('../images/shinygreen.jpg');    
+    } 
+
+#rcpy a
+{
+color: Navy;    
+    }     
+    
+#rcpy a:hover
+{
+color: White;  
+    }       
+    
+/*messagge after registration */
+
+#tbs
+    {
+    position: absolute;
+    top: 100px;
+    left: 354px;    
+    background-color: #FF7000;
+    color: White;    
+        }
+.mr a
+    {
+    font-weight: bolder; 
+    color: blue;
+    font-size: small;    
+        }
+.mr a:hover
+    { 
+    font-weight: bolder;     
+    background-color: #FFFFFF; 
+    font-size: small;   
+        }    
+    
+/*end messagge after registration */    
+
+#back 
+{
+position: relative;
+font-weight: bold;
+background-color: white;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid white;
+-moz-border-radius: 5px; 
+text-decoration: none;   
+-webkit-border-radius: 5px; 
+behavior: url(ie-css3.htc);
+    } 
+    
+    
+#back:hover 
+{
+position: relative;
+color: green;
+font-weight: bold;
+background-color: Navy;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid white;
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px; 
+behavior: url(ie-css3.htc);  
+   
+    }     
+    
+#addcomm
+{
+position: relative;
+color: white;
+font-weight: bold;
+background-color: #161616;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid white;
+-moz-border-radius: 5px; 
+text-decoration: none;   
+-webkit-border-radius: 5px; 
+behavior: url(ie-css3.htc);
+    } 
+    
+#addcomm:hover
+{
+position: relative;
+color: #161616;
+font-weight: bold;
+background-color: white;
+padding-left: 10px;
+padding-right: 10px;
+border: 1px solid #111111;
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px; 
+behavior: url(ie-css3.htc);  
+   
+    }        
+    
+    
+ #tbinst
+{
+position: absolute;
+top: 150px;
+left: 175px;  
+background-color: #FFFFE9;
+border-color: Green;
+border-style: solid;
+border-width: thin;
+    }
+    
+#tbacpl
+{
+position: absolute;
+top: 150px;
+left: 350px;  
+border-style: solid;
+border-color: Green;
+border-width: thin;  
+    }    
+.ur
+{
+background-color: Green;
+height: 5px;
+}   
+
+#titsmilie
+{
+position: relative;
+left: 35px;
+text-decoration: underline;
+text-align: center;
+}
+
+#tbsmilie
+{
+border-style: solid;
+border-width: thin;
+border-color: Green;
+width: 150px;
+}
+
+
+#tbsm
+{
+position: relative;
+left: 70px;
+border-style: solid;
+border-width: thin;
+border-color: Green;
+width: 150px;
+}
+
+#tbsm td
+{
+position: relative;
+left: 70px;
+border-style: dashed;
+border-width: thin;
+border-color: Green;
+width: 150px;
+}
+
+#tbsm td:hover
+{
+border-style: solid;
+border-color: #FF7000;
+}
+
+#tbsm a:hover
+{
+background-color: White;
+}
+
+
+#closesm
+{
+position: relative;
+color: white;
+font-weight: bold;
+background-color: #141414;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid white;
+-moz-border-radius: 5px; 
+text-decoration: none;   
+-webkit-border-radius: 5px; 
+behavior: url(ie-css3.htc);
+    } 
+    
+#closesm:hover
+{
+position: relative;
+color: #4B4B4B;
+font-weight: bold;
+background-color: white;
+padding-left: 10px;
+padding-right: 10px;
+border: 1px solid #141414;
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px; 
+behavior: url(ie-css3.htc);  
+   
+    }     
+    
+#step2
+{
+font-size: medium;
+} 
+

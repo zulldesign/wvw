@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css" media="all">
+    
+    h2
+    {
+    text-align: center;    
+        }
+    a
+    {
+    color: Blue;    
+        }
+    a:hover
+    {
+   color: #FF7000;    
+        }
+   
+    
+   #tbl
+   {
+   position: absolute;
+   top: 240px;
+   left: 400px; 
+   text-align: justify;
+       } 
+   #tbr
+   {
+   position: absolute;
+   top: 400px;
+   left: 400px;   
+   text-align: justify;   
+       }
+        
+   #tbi
+   {
+   position: absolute;
+   top: 600px;
+   left: 400px;
+   text-align: justify;     
+       }   
+   #tbu
+   {
+   position: absolute;
+   top: 1000px;
+   left: 400px; 
+   text-align: justify;  
+       }  
+   
+    
+    </style>
+</head>
+<body>
+<h2 align="center"><u>Installation</u></h2>
+
+
+<table align="center"  width="650">
+<tr><td>
+ <ul>
+                             <li>Upload all content of package in IIS, recommended don't rename the folder blogdotnet</li>
+                             <li>Go to blogdotnet/setup/Default.aspx</li>
+                             <li>Create a database in MySql Server</li>
+                             <li>Execute queryblog.sql, in setup folder with phpmyadmin or another MySql manager sofware</li>
+                             <li>Modify config.inc to reflect your data in MySql Server</li>
+                             <li>Go to second step /yourblogfolder/Default1.aspx and enter your Data</li>
+                                <ul>
+                               <li>Admin Nick: your nick as Administrator</li>
+                               <li>Password: your password for admin section and blog section</li>
+                               <li>Email: your email administrator</li>
+                               <li>Blog Title: the title of your blog</li>
+                               <li>Location</li>
+                               <li>Email Server: your mail server used to email notification - example smtp.provider.com</li>
+                               </ul>
+                              <li>Click on <b>Setup the blog</b>, after this the process is complete</li>
+                              <li>Grant write permissions on admin/upload folder</li>
+                              <li>Remove the setup folder</li>
+                            </ul>      
+</td></tr>
+</table>
+
+
+
+</body>
+</html>
