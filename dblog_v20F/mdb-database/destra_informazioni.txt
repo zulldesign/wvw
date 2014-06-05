@@ -1,0 +1,3 @@
+<a href="autori.asp">Autori</a>
+<br /><a href="autori.asp#perche">Il perch&eacute;</a>
+<br /><a href="autori.asp#copyright">Copyright</a>

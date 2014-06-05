@@ -1,0 +1,22 @@
+<%
+    'dBlog 2.0 CMS Open Source
+%>
+<%
+    Dim Testo_Introduzione_Autori, Testo_Il_perche, Testo_Copyright, Errore_Autore_NonTrovato, Articoli_Di, Fotografie_Di, Num_Max_ArticoliFotografiePerPagina
+
+'---AUTORI
+'Introduzione agli autori
+Testo_Introduzione_Autori = "Sìori e sìori accogliamo con un fragoroso applauso..."
+'Testo Il perché
+Testo_Il_perche = "<strong>Il perché</strong><br /><i><br />Goditi potere e bellezza della tua gioventù. Non ci pensare. Il potere di bellezza e gioventù lo capirai solo una volta appassite. Ma credimi tra vent'anni guarderai quelle tue vecchie foto. E in un modo che non puoi immaginare adesso. Quante possibilità avevi di fronte e che aspetto magnifico avevi! Non eri per niente grasso come ti sembrava.<br />Non preoccuparti del futuro. Oppure preoccupati , ma sapendo che questo ti aiuta quanto masticare un chewing-gum per risolvere un'equazione algebrica. I veri problemi della vita saranno sicuramente cose che non t'erano mai passate per la mente. Di quelle che ti pigliano di sorpresa alle quattro di un pigro martedì pomeriggio.<br />Fa' una cosa, ogni giorno che sei spaventato. Canta. Non esser crudele col cuore degli altri. Non tollerare la gente che è crudele col tuo.<br />Lavati i denti. Non perder tempo con l'invidia. A volte sei in testa. A volte resti indietro. La corsa è lunga e alla fine è solo con te stesso.<br />Ricorda i complimenti che ricevi, scordati gli insulti. Se ci riesci veramente dimmi come si fa.<br />Conserva tutte le vecchie lettere d'amore, butta i vecchi estratti conto. Rilassati.<br />Non sentirti in colpa se non sai cosa vuoi fare della tua vita. Le persone più interessanti che conosco, a ventidue anni non sapevano che fare della loro vita. I quarantenni più interessanti che cono sco ancora non lo sanno.<br />Prendi molto calcio. Sii gentile con le tue ginocchia, quando saranno partite ti mancheranno.<br />Forse ti sposerai o forse no. Forse avrai figli o forse no. Forse divorzierai a quarant'anni. Forse ballerai con lei al settantacinquesimo anniversario di matrimonio. Comunque vada, non congratularti troppo con te stesso, ma non rimproverarti neanche. Le tue scelte sono scommesse. Come quelle di chiunque altro.<br />Goditi il tuo corpo. Usalo in tutti i modi che puoi. Senza paura e senza temere quel che pensa la gente. E' il più grande strumento che potrai mai avere. Balla. Anche se il solo posto che hai per farlo è il tuo soggiorno.<br />Leggi le istruzioni, anche se poi non le seguirai. Non leggere le riviste di bellezza. Ti faranno solo sentire orrendo.<br />Cerca di conoscere i tuoi genitori. Non puoi sapere  quando se ne andranno per sempre. Tratta bene i tuoi fratelli. Sono il migliore legame con il passato e quelli che più probabilmente avranno cura di te in futuro. Renditi conto che gli amici vanno e vengono. Ma alcuni, i più preziosi, rimarranno. Datti da fare per colmare le distanze geografiche e di stili di vita, perche più diventi vecchio, più hai bisogno delle persone che conoscevi da giovane.<br />Vivi a New York per un po', ma lasciala prima che ti indurisca. Vivi anche in California per un po', ma lasciala prima che ti rammollisca.<br />Non fare pasticci coi capelli, se no quando avrai quarant'anni sembreranno di un ottantacinquenne.<br />Sii cauto  nell'accettare consigli, mal sii paziente con chi li dispensa. I consigli sono una forma di nostalgia. Dispensarli è un modo di ripescare il passato dal dimenticatoio, ripulirlo, passare la vernice sulle parti più brutte e riciclarlo per più di quel che valga. Ma accetta il consiglio... per questa volta.</i><br /><br /><div align=""right"">Tratto da ""The Big Kahuna"", 2000, regia J. Swanbeck</div>"
+'Testo Copyright
+Testo_Copyright = "<strong>Copyright</strong><br />Tutti i testi e le immagini presenti su questo sito, tranne dove diversamente indicato, sono da considerarsi proprietà intellettuale dell'autore. Ogni violazione a queste semplici richieste verrà perseguita legalmente secondo i termini della vigente legge italiana."
+'Errore autore non trovato
+Errore_Autore_NonTrovato = "Nessun autore trovato."
+'Titolo per elenco articoli scritti da questo autore
+Articoli_Di = "Gli articoli di "
+'Titolo per elenco fotografie scattate da questo autore
+Fotografie_Di = "Le fotografie di "
+'Numero di articoli/fotografie da visualizzare tra quelli dell'autore
+Num_Max_ArticoliFotografiePerPagina = 10
+%>

@@ -1,0 +1,67 @@
+dBlog 2.0 CMS Open Source - Copyright dBlog www.dblog.it
+
+Gli script del pacchetto compongono la piattaforma CMS per la pubblicazione e la gestione di un sito web dinamico.
+
+
+HAI GIA' LA VERSIONE 1.4.x?
+In tal caso il primo consiglio è di fare un backup completo su CD di tutto.
+Successivamente, se lo desideri, puoi riprodurre l'attuale grafica del tuo blog modificando esclusivamente i file *.htm e *.css che trovi all'interno della nuova cartella \dblog\template facendo attenzione a non rimuovere i tag proprietari del tipo [#NOMETAG#] poiché altrimenti i relativi moduli non verrebbero eseguiti.
+Per utilizzare la nuova versione senza perdere i post e le foto già pubblicate devi cancellare tutti i file online ad eccezione di questi:
+- \mdb-database\dblog.mdb
+- \mdb-database\destra*.txt
+- \public\*.*
+Al termine di queste operazioni puoi caricare online tutti i file della nuova versione 2.0 facendo molta attenzione a non sovrascrivere quelli che abbiamo appena lasciato! Infine devi far girare il file "da_14_a_20.asp" presente nella root del blog seguendo le istruzioni a video: questo script si occuperà di modificare la struttura del database, convertire le vecchie password nella nuova versione criptata a 160 bit e di aggiornare, nei post e nei commenti, i path degli smile grafici che ora hanno cambiato posizione.
+Ora non ti resta che verificare il buon esito dell'operazione ed iniziare ad usare dBlog 2.0 CMS Open Source :-)
+
+UPGRADE FROM 1.4.x TO 2.0
+Something in english: http://www.dblog.it/forum/forum_posts.asp?TID=147&PN=1
+
+HAI GIA' LA VERSIONE 2.0 RC2?
+In tal caso il primo consiglio è di fare un backup completo su CD di tutto.
+Per utilizzare la nuova versione senza perdere i post e le foto già pubblicate devi cancellare tutti i file online ad eccezione di questi:
+- \dblog\template\*.*
+- \mdb-database\dblog.mdb
+- \mdb-database\destra*.txt
+- \public\*.*
+Al termine di queste operazioni puoi caricare online tutti i file della nuova versione 2.0 facendo molta attenzione a non sovrascrivere quelli che abbiamo appena lasciato! Infine devi far girare il file "da_20rc2_a_20.asp" presente nella root del blog seguendo le istruzioni a video: questo script si occuperà di aggiungere il campo Podcast nella tabella Articoli, funzionalità non presente nella versione 2.0 RC2.
+Ora non ti resta che verificare il buon esito dell'operazione ed iniziare ad usare dBlog 2.0 CMS Open Source :-)
+
+
+NON HAI MAI USATO DBLOG?
+Scompatta il file .zip e copia il tutto nella root del sito tramite FTP ricordandoti di assegnare i permessi come segue:
+- scrittura e non download alla cartella "\mdb-database"
+- scrittura alla cartella "\public"
+Se non sei in grado di assegnare i permessi alle cartelle, puoi chiedere al tuo fornitore di hosting.
+
+A questo punto nella root sarà presente:
+- la cartella "dblog", al cui interno sono contenuti tutti i file che compongono il software
+- la cartella "mdb-database", al cui interno c'è il database e i file di configurazione del blog
+- la cartella "public", al cui interno vengono salvati i contenuti (articoli, immagini e foto) del blog
+- il file default.htm, che reindirizza automaticamente alla home page del blog
+- il file global.asa, che gestisce internamente le sessioni e gli utenti collegati
+- il file da_14_a_20.asp che DEVE ESSERE ASSOLUTAMENTE cancellato
+- i file informativi *.txt
+
+Non serve fare nient'altro: collegati al tuo indirizzo web per utilizzare dBlog 2.0 CMS Open Source.
+
+	
+IMPORTANTE IN OGNI CASO
+La cartella "public" e "mdb-database" devono sempre rimanere allo stesso livello.
+La cartella "mdb-database" deve mantenere la nomenclatura ed il percorso attuale, nel caso fosse necessaria una modifica occorrerà effettuare una ricerca in tutti i file *.asp e sostituire il nome vecchio con quello nuovo. Sarà anche necessario modificare preventivamente il path nel Pannello di controllo alla voce "Sistema" - "PATH completo della directory in scrittura".
+Ricorda: il file da_14_a_20.asp deve essere assolutamente cancellato dalla versione online.
+
+
+PANNELLO DI CONTROLLO
+Nella cartella http://www.iltuodominioqui.it/dblog/admin è disponibile il Pannello di controllo per la gestione del blog da remoto e in tempo reale. Per il primo collegamento utilizza come UserID "admin" e come Password "admin", ricordati di cambiare immediatamente la parola segreta tramite la sezione "Autori" e i parametri minimi legati al tuo blog dalla sezione "Configurazione - Blog" e "Configurazione - Sistema".
+
+Nota: www.iltuodominioqui.it va sostituito con l'url del tuo sito.
+
+
+PROBLEMI E BUG
+Per eventuali segnalazioni o necessità di assistenza non scrivermi in privato, ma utilizza il Forum pubblico su http://www.dblog.it/forum , in questo modo chiunque potrà rispondere alla tua domanda (e lo stesso potrai fare tu per le altre domande), ma sopratutto i futuri utilizzatori di dBlog potranno fare tesoro dell'esperienza degli altri semplicemente leggendo i vecchi messaggi.
+
+HOSTING E SICUREZZA
+Per evitare che venga effettuato il download del DataBase contenente la password di amministrazione occorre utilizzare servizi di hosting sicuri, che siano in grado di assegnare i permessi di "non dowload" alla cartella \mdb-database (caratteristica normale e solitamente predefinita).
+
+DISCLAIMER SPY
+Per effettuare il test di un nuovo servizio che verrà reso disponibile a breve ad ogni nuovo post viene effettuato un ping automatico a dBlog.it (stessa logica del famosissimo Technorati.com): vengono raccolti il titolo, i primi caratteri del post ed il link. Tutte informazioni pubbliche recuperabili anche tramite Google. Per questo motivo, se si desidera creare un blog privato o non partecipare a questo test è sufficiente eliminare la riga <!--#include file="inc_spy.asp"--> da \dblog\admin\articoli_aggiungi.asp

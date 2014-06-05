@@ -1,0 +1,214 @@
+
+Versione 2.0
+
+Aggiunta la navigazione dello storico articoli per cronologia inversa, quindi è possibile sia partire dall'ultimo articolo inviato che dal primo inviato. Qualcuno sa perché :-)
+
+Corretto i valori recuperabili da popup per i campi Sezione, Data ed Ora che non funzionavano in Firefox a causa della mancanza del parametro ID a favore del parametro NAME e di alcune imprecisioni nel javascript.
+
+Inserita la possibilità di effettuare l'upload di più file contemporaneamente, per la precisione fino a cinque (prima si poteva caricare solo un file per volta)!
+
+Corretto il bug che non cancellava i file .txt relativi quando si eliminava un articolo dal database, lo stesso per le fotografie. Adesso ogni volta che si cancella un articolo o una foto lo si fa in maniera definitiva ed irrecuperabile (a meno che non si disponga di un backup).
+
+Corretto il link all'RSS poiché in Firefox non appariva l'icona per sottoscrivere il Feed
+
+Aggiunta la funzionalità che prevede la cifratura (tramite algoritmo sha-1 a 160 bit) di tutte le password degli utenti, in questo modo anche scaricando il database o riuscendo ad accedere ai dati tramite hacking non sarà possibile in nessun modo conoscere le password
+
+Corretto un bug sulla paginazione per il quale modificando il parametro della pagina in query string (mettendo ad esempio un numero negativo) veniva generato un errore bloccante
+
+Corretto un bug nel login al Pannello di controllo che non permetteva le UserID contenenti il carattere "apostrofo"
+
+Aggiunta la funzionalità di LinkLog, ora dBlog è: blog, photoblog e... linklog :-)
+
+Migliorato il supporto per i motori di ricerca inserendo in maniera dinamica il titolo dell'articolo nel tag TITLE di ogni pagina (nel perma-link)
+
+Corretto il tag della gif che rappresenta lo smile arrabbiato perché dava problemi con alcuni browser a causa del carattere ">" che veniva interpretato
+
+Aggiunta l'evidenziazione nel testo del termine ricercato
+
+Completato la libreria dei testi esterni inserendo anche quelli del Pannello di controllo: adesso è possibile localizzare/tradurre interamente la piattaforma dBlog
+
+Eliminazione dei tag dai titoli degli articoli e dai nomi delle sezioni
+
+Aggiunta la possibilità di mostrare gli ultimi N commenti nella colonna di destra, l'amministratore può scegliere se attivare o meno la funzionalità
+
+Aggiunta la paginazione nelle sezioni in cui vengono mostrate le fotografie, e nella sezione autori
+
+Corretto un bug che non permetteva di inserire le virgolette all'interno di un campo nella Configurazione da Pannello di controllo
+
+Aggiunto il Feed Atom 0.3
+
+Eliminata la gestione della cache nelle sezioni degli articoli e delle fotografie, ora vengono elencati in tempo reale, questa modifica corregge anche un bug che incrementava gli elementi di una sezione anche se il nuovo oggetto veniva schedulato per una data successiva a quella odierna
+
+Inserita la possibilità di mostrare il tempo di esecuzione dello script, l'amministratore può scegliere se attivare o meno la funzionalità
+
+Aggiunti i meta tag dinamici per ogni articolo e fotografia, vengono prelevate dalla descrizione le prime N parole più lunghe di 3 caratteri
+
+Corretto un bug che non permetteva di inserire un "a capo" all'interno delle costanti in Configurazione dal Pannello di controllo
+
+Migliorato il supporto per i motori di ricerca modificando il parametro "id=" nella query string, pur mantenendo il supporto per le pagine già indicizzate che non verranno perse
+
+Aggiunta una funzionalità di filtro (molto blando) per le parola nei commenti inviati dagli utenti
+
+Corretto un bug che non permetteva di modificare le informazioni sugli Autori contenenti il carattere "virgolette"
+
+Modificato il motore di ricerca interno togliendo il case sensitive, adesso cercare "CIAO" o "ciao" produce gli stessi risultati, inoltre la parola cercata rimane presente all'interno del modulo anche dopo aver mostrato i risultati
+
+Aggiunto il nuovo tag di Google rel="nofollow" per evitare lo spam nei commenti
+
+Aggiunta la possibilità di compattare il database del blog e di fare un backup online
+
+Corretta una vulnerabilità XSS che permetteva, passando un appropriato codice javascript, di far eseguire uno script java lato utente per, ad esempio, memorizzare cookie sul pc dei navigatori
+
+Corretto un bug nella navigazione dello storico che non permetteva di procedere nelle pagine vecchie generando l'errore "Nessun articolo".
+
+Corretto un bug che non permetteva di inserire categorie contenenti il carattere "apostrofo" o "spazio"
+
+Inserito un nuovo editor che funziona anche con Firefox
+
+Aggiunta la possibilità di mostrare l'articolo completo nella home page oppure un "trailer" di N caratteri con un tag di chiusura [//] da cliccare per continuare a leggerne il contenuto, l'amministratore può scegliere se attivare o meno la funzionalità
+
+Aggiunta la possibilità di visualizzare i commenti in un popup oppure in coda all'articolo, l'amministratore può scegliere quale dei due metodi utilizzare
+
+Corretto un bug che non permetteva di utilizzare un'immagine contenente i caratteri ".." su sistemi Windows Server 2003
+
+Corretto un errore di path nell'immagine degli Autori quando venivano caricate tramite l'upload del Pannello di controllo
+
+Modificato l'inserimento dei commenti per mantenere gli "a capo" che prima andavano perduti
+
+Modificato l'inserimento dei commenti in maniera tale che non sia permesso firmarsi con un nick utilizzato dagli autori del blog stesso
+
+Aggiunta la possibilità di inviare mail e notifiche di nuovi commenti tramite il componente CDOSYS, inoltre l'amministratore può scegliere se inviare la notifica (di default è disattiva) e in tal caso quale componente usare tra aspemail, cdonts e codsys.
+
+Modificato i testi di default togliendo dal copyright la Creative Commons che non tutti desideravano sottoscrivere
+
+Corretto un bug di sicurezza sugli autori e sul login che permetteva l'accesso al Pannello di controllo tramite tecniche di SQL Injection
+
+Corretto un bug che bloccava la piattaforma in caso di inserimento, dalla Configurazione nel Pannello di controllo, di valori testuali in campi che invece dovevano accettare solo valori numerici, ora l'errore viene gestito
+
+Modificata la gestione della Configurazione, ora l'utilizzo dei doppi apici è stato automatizzato mentre prima veniva richiesto all'utente di ricordarsi della cosa
+
+Modificato il modulo di upload per controllare se esiste già un file con il nome che stiamo utilizzando
+
+Aggiunto un semplice file manager per la gestione (visualizzazione e cancellazione) dei file caricati
+
+Aggiunto un popup nella gestione delle fotografie, ora non è più necessario digitare a mano il nome del file ma si può scegliere da un elenco
+
+Corretto un bug per il quale gli articoli in bozza venivano ugualmente conteggiati nel totale per sezione
+
+Corretto un bug nel calendario per il quale se il primo giorno del mese cade di domenica (come agosto 2004) questo viene visualizzato come lunedì
+
+Eliminati i vincoli che bloccavano la dimensione (in pixel) delle fotografie e delle immagini in generale, ora la gestione intelligente spetta al blogger
+
+Validato il Feed RSS
+
+Aggiunto il link alla Home Page nel footer del Pannello di controllo
+
+Aggiunta la gestione dei template, fornendo un template di base identico a quello originale ma concepito secondo gli standard XHTML e CSS dettati dal W3C, ora è finalmente possibile modificare solo la grafica senza preoccuparsi della programmazione e del motore del blog
+
+Aggiunta la possibilità, via Ping-o-matic, di pingare Weblogs.com (da cui attinge Google Blogsearch) Technorati e Feedster dopo l'inserimento o la modifica di un articolo
+
+Aggiunto il supporto per i podcast, con audio in formato mp3, ed il relativo player integrato in Flash
+
+Corretto un bug nelle sezioni di articoli e fotografie che visualizzava le HTML Entities invece di interpretarle
+
+Corretto una mancanza nella funzione cerca: adesso la ricerca avviene anche nel titolo dell'articolo
+
+Corretto un bug nel controllo delle estensioni tramite editor visuale FCKEditor: adesso vengono caricate immagini anche con estensioni scritte in maiuscolo (.JPG, .PNG, .GIF) che prima venivano ignorate
+
+Aggiunto il campo Password di conferma nella creazione/modifica degli Autori dal Pannello di controllo
+
+Aggiunto un controllo nella cancellazione degli Autori: adesso solo l'Admin può cancellare un altro autore (prima potevano auto-cancellarsi), inoltre non è più possibile cancellare utenti di livello Admin, occorre prima portarli ad un livello inferiore
+
+Aggiunto nell'elenco Articoli del Pannello di controllo un filtro per mostrare solo gli Articoli in bozza in maniera da agevolarne la ricerca
+
+Aggiunto nel popup Sezioni la possibilità di rinominare in automatico una Sezione (sia in Articoli che in Fotografie)
+
+Aggiunto i cookie per il voto del Sondaggio: ora si può votare solo una volta per sondaggio a meno di non cancellare i cookie ;-) (codice di Visuddhi sul Forum)
+
+Aggiunto messaggio di conferma modifica alla sezione Link amici e Stuff
+
+Aggiunta la data di pubblicazione di un Articolo e di una Fotografia quando trovati tramite la funzione di ricerca
+
+Modificato l'ordine dei campi nella modifica Articolo, per uniformarlo all'ordine di aggiungi Articolo
+
+Aggiunto un riferimento (Titolo e Descrizione) nel popup dei commenti per Articoli e Fotografie
+
+Modificato la funzione Trailer, ora è attiva solo nella Home Page (a scelta tramite Pannello di controllo). Si può attivare a mano anche in cerca.asp, pubblicazioni.asp e storico.asp modificando l'ultimo parametro della funzione
+
+Aggiunto un flag per decidere se attivare o meno l'evidenziatore nelle ricerche (predefinito disattivo) fino alla soluzione del bug nella Regular Expression
+
+Aggiunto il resize automatico delle fotografie (sia thumbnails che fotografie grandi che intestazione) per gli hosting che supportano ASP.NET, funzione da attivare tramite la Configurazione dal Pannello di controllo
+
+--------------------------------------------------
+
+Patch 1.4.2
+Correzione del bug di sicurezza per il quale tramite la tecnica SQL Injection era possibile accedere al Pannello di controllo
+
+--------------------------------------------------
+
+Patch 1.4.1
+Eliminazione dei due link in Newsletter e Directory in Admin, erano rimasti per una mia dimenticanza :-)
+
+Correzione del formato Feed RSS, adesso è utilizzabile da qualsiasi reader e segue lo standard imposto.
+
+--------------------------------------------------
+
+Versione 1.4
+
+Modificato \dblog\stampa.asp e \dblog\storico.asp perché, a causa di una mia dimenticanza, non contenevano il controllo sulla schedulazione per orario (erano solo per data).
+
+Modificato in \dblog\default.asp il metodo di controllo sulla schedulazione, prima generava il messaggio di errore "Nessun articolo trovato" quando c'era un post schedulato per il giorno in corso, ma ad un orario successivo, ora è stato corretto.
+
+Ho aggiunto nella colonna di destra il conteggio automatico degli oggetti (fotografie e articoli) contenuti nelle relative sezioni.
+
+Ho inserito il logo di dBlog nel Pannello di controllo (SpiderGirl grazieee :)) e, sempre dal Pannello di controllo, ho eliminato il target=_blank nel link alla Home Page, ora si apre nella stessa pagina.
+
+Modificate le gif dei 3 pulsanti: pulsante_cerca.gif, pulsante_vota.gif e pulsante_invia.gif, inoltre modificato l'heigth di pulsante_invia.gif nei file commenti_articolo.asp e commenti_foto.asp.
+
+Modificati lato admin tutti i file che contengono un richiamo alla funzione javascript "Popup" inserendo il nuovo parametro contenente il nome della finestra così da poter aprire tutti i popup insieme, ma in finestrelle diversificate in base alla tipologia.
+
+Aggiunta nella gestione Articoli la funzionalità "Bozza" che permette di non pubblicare un articolo ma di lasciarlo "pending" per una successiva revisione (ogni nuovo articolo quando viene creato ha il campo Bozza predefinito su NO). Per far questo ho modificato tutti i file lato utente che utilizzano la tabella Articoli, mentre lato admin solo i file articoli_elenco.asp, articoli_aggiungi.asp ed articoli_modifica.asp. Il database non è stato modificato poiché già conteneva il flag Bozze nella tabella Articoli, anche se non era ancora utilizzato da nessuno script.
+
+In relazione alla modifica precedente è stata aggiunta la funzionalità di Preview nell'elenco degli articoli nel Pannelli di Controllo. Cliccando su questo link sarà possibile visualizzare l'articolo anche prima della sua data/ora di pubblicazione e capire come verrà mostrato nel layout del sito.
+
+Su richiesta di molti è stata modificata la Configurazione delle costanti nel Pannello di controllo, da questa versione sono divise per sezione e quindi sono più velocemente caricabili, per far questo anche il file \mdb-database\inc_costanti è stato spezzettato in diversi sotto-moduli. Tutte le vostre configurazioni andranno quindi ricreate A MANO da Pannello, scusatemi ma era inevitabile per scrivere questa funzione :P
+
+In seguito alle richieste degli utenti di Aruba è stata spostata la cartella di destinazione dei file degli articoli (NNNNNN.txt), delle immagini, delle foto, degli allegati e di tutto quello che veniva gestito tramite l'upload. Ora la cartella del content è diventata \public, mentre \mdb-database rimane valida solo per i database, gli include delle costanti e gli include gestiti automaticamente dalla piattaforma (destra_*.txt).
+
+--------------------------------------------------
+
+Versione 1.3
+
+Modificato tutti i path contenenti indirizzamenti relativi di tipo "../" poiché sui nuovi sistemi Microsoft Windows 2003 potevano generare errori bloccanti nel caso in cui fossero state configurate alcune opzioni di sicurezza sul server. Per il problema di cui sopra, da questa nuova versione la cartella nella quale inserire il software NON E' PIU' MODIFICABILE (a meno di non agire manualmente sul codice), inoltre il software non può essere inserito nella root ma deve mantenere la struttura con cui viene decompresso dal pacchetto zip; il file \default.htm si preoccupa di eseguire il reindirizzamento automatico.
+
+Modificato tutti i file contenenti la visualizzazione di articoli e/o fotografie per aggiungere, oltre alla schedulazione per data, anche quella per orario. Adesso è possibile programmare l'inserimento di un articolo che verrà pubblicato in futuro ad una data ed un orario prestabiliti.
+
+Sostituito il precedente editor "Easy Web Editor" con uno nuovo ovvero "htmlArea" decisamente migliore, trovate la licenza nella relativa cartella. Questo editor non funziona su Mac, tuttavia nella prossima release, oggi in fase di beta-testing, verrà integrato il supporto anche per gli ambienti Apple.
+
+Modificato il colore di \dblog\gfx\pulsante_invia.gif da grigio a rossiccio, per uniformarlo agli altri pulsanti (mi ero scordato di colorarlo :P)
+
+--------------------------------------------------
+
+Versione 1.2
+
+Aggiunta l'àncora nel link alla classifica delle fotografie così non è più necessario scorrere manualmente tutta la pagina per arrivare al contenuto richiesto
+
+Modificato le versioni dei file nel codice sorgente (ogni file mantiene il numero dell'ultima versione in cui è stato aggiornato), questo non comporta alcuna novità nelle funzioni del software
+
+Modificato l'ordine del tag A nel css in modo da renderli visibili correttamente anche su Mac
+
+Modificato il file vota.asp nel quale mancava l'include inc_db.asp che gestisce le connessioni al database e quindi ad ogni voto veniva generato un errore
+
+Modificato i file \admin\autori_modifica.asp e \admin\autori_aggiungi.asp migliorando la descrizione del campo "Immagine" (nel campo si può inserire il path relativo di un file immagine precedentemente caricato sul server, oppure l'URL completo di un'immagine remota)
+
+Modificato il file feedrss.asp nel quale mancava l'include inc_db.asp che gestisce le connessioni al database e quindi ad ogni richiesta del Feed RSS veniva generato un errore
+
+--------------------------------------------------
+
+Versione 1.1
+
+Modificato il file \inc_funzioni.asp in particolare alla funzione SostituisCicaratteri (mi ero dimenticato di inserire l'ultima versione del file nel pacchetto definitivo :P) che generava errore ad ogni richiamo
+
+Modificato il file \admin\autori_elenco.asp ho preferito togliere il testo descrittivo nella visualizzazione degli autori lato amministratore per evitare problemi legati ai tag e per uniformare tutto il Pannello
+
+Modificato il file \autori.asp e \mdb-database\inc_costanti.asp per una stringa (quella di introduzione agli autori) che mi ero dimenticato di inserire nella libreria modificabile da Pannello

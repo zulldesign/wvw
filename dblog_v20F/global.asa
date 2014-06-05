@@ -1,0 +1,18 @@
+<script language="VBScript" runat="Server">
+	Sub Application_OnStart
+		Application("UtentiOnLine") = 0
+	End Sub
+
+	Sub Session_OnStart
+		Session.Timeout = 20
+		Application.Lock
+			Application("UtentiOnLine") = Application("UtentiOnLine") + 1
+		Application.Unlock
+	End Sub
+
+	Sub Session_OnEnd
+		Application.Lock
+		Application("UtentiOnLine") = Application("UtentiOnLine") - 1
+		Application.Unlock
+	End Sub
+</script>
