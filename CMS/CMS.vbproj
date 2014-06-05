@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{0B8ACCAD-AC12-4030-A075-622E4DA637AE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CMS</RootNamespace>
+    <AssemblyName>CMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CMS.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CMS.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CMS.WebApplication.Authentication" />
+    <Import Include="CMS.WebApplication.Common" />
+    <Import Include="CMS.WebApplication.Components" />
+    <Import Include="CMS.WebApplication.Config" />
+    <Import Include="CMS.WebApplication.Extension" />
+    <Import Include="CMS.WebApplication.FeedRSSManager" />
+    <Import Include="CMS.WebApplication.ImageManager" />
+    <Import Include="CMS.WebApplication.LanguageManager" />
+    <Import Include="CMS.WebApplication.MenuManager" />
+    <Import Include="CMS.WebApplication.NewsManager" />
+    <Import Include="CMS.WebApplication.PhotoManager" />
+    <Import Include="CMS.WebApplication.PluginManager" />
+    <Import Include="CMS.WebApplication.QueryKey" />
+    <Import Include="CMS.WebApplication.Sitemap" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Advertising.aspx" />
+    <Content Include="Blank.aspx" />
+    <Content Include="chat.aspx" />
+    <Content Include="checkup.aspx" />
+    <Content Include="ConfigEditor.aspx" />
+    <Content Include="contact.aspx" />
+    <Content Include="css.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="domainevaluation.aspx" />
+    <Content Include="earth.aspx" />
+    <Content Include="edit.aspx" />
+    <Content Include="forum.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HomeUser.aspx" />
+    <Content Include="ip2flag.aspx" />
+    <Content Include="IPN.aspx" />
+    <Content Include="LanguageEditor.aspx" />
+    <Content Include="log.aspx" />
+    <Content Include="MasterPage.master" />
+    <Content Include="messenger.aspx" />
+    <Content Include="pagesmanager.aspx" />
+    <Content Include="pay.aspx" />
+    <Content Include="PhotoOperations.ascx" />
+    <Content Include="Plugins\readme.txt" />
+    <Content Include="Poll.aspx" />
+    <Content Include="profile.aspx" />
+    <Content Include="profilemanager.aspx" />
+    <Content Include="readme.txt" />
+    <Content Include="script.aspx" />
+    <Content Include="search.aspx" />
+    <Content Include="Service References\SendSMS\configuration91.svcinfo" />
+    <Content Include="Service References\SendSMS\configuration.svcinfo" />
+    <Content Include="Service References\SendSMS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <Content Include="setup.aspx" />
+    <Content Include="showphoto.aspx" />
+    <Content Include="sms.aspx" />
+    <Content Include="thumbnails.aspx" />
+    <Content Include="translator.aspx" />
+    <Content Include="uploadphoto.aspx" />
+    <Content Include="utility.aspx" />
+    <Content Include="viewimg.aspx" />
+    <Content Include="viewthumb.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advertising.aspx.designer.vb">
+      <DependentUpon>Advertising.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Advertising.aspx.vb">
+      <DependentUpon>Advertising.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blank.aspx.designer.vb">
+      <DependentUpon>Blank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blank.aspx.vb">
+      <DependentUpon>Blank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="chat.aspx.designer.vb">
+      <DependentUpon>chat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="chat.aspx.vb">
+      <DependentUpon>chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkup.aspx.designer.vb">
+      <DependentUpon>checkup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkup.aspx.vb">
+      <DependentUpon>checkup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigEditor.aspx.designer.vb">
+      <DependentUpon>ConfigEditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigEditor.aspx.vb">
+      <DependentUpon>ConfigEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.vb">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.vb">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="css.aspx.designer.vb">
+      <DependentUpon>css.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="css.aspx.vb">
+      <DependentUpon>css.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="domainevaluation.aspx.designer.vb">
+      <DependentUpon>domainevaluation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="domainevaluation.aspx.vb">
+      <DependentUpon>domainevaluation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="earth.aspx.designer.vb">
+      <DependentUpon>earth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="earth.aspx.vb">
+      <DependentUpon>earth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit.aspx.designer.vb">
+      <DependentUpon>edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edit.aspx.vb">
+      <DependentUpon>edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forum.aspx.designer.vb">
+      <DependentUpon>forum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forum.aspx.vb">
+      <DependentUpon>forum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeUser.aspx.designer.vb">
+      <DependentUpon>HomeUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeUser.aspx.vb">
+      <DependentUpon>HomeUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ip2flag.aspx.designer.vb">
+      <DependentUpon>ip2flag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ip2flag.aspx.vb">
+      <DependentUpon>ip2flag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IPN.aspx.designer.vb">
+      <DependentUpon>IPN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IPN.aspx.vb">
+      <DependentUpon>IPN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LanguageEditor.aspx.designer.vb">
+      <DependentUpon>LanguageEditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LanguageEditor.aspx.vb">
+      <DependentUpon>LanguageEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="log.aspx.designer.vb">
+      <DependentUpon>log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="log.aspx.vb">
+      <DependentUpon>log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.master.designer.vb">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.vb">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="messenger.aspx.designer.vb">
+      <DependentUpon>messenger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="messenger.aspx.vb">
+      <DependentUpon>messenger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\AntyDDoSAttacks.vb" />
+    <Compile Include="Modules\Authentication.vb" />
+    <Compile Include="Modules\ChatManager.vb" />
+    <Compile Include="Modules\Common.vb" />
+    <Compile Include="Modules\Config.vb" />
+    <Compile Include="Modules\ContextualLinks.vb" />
+    <Compile Include="Modules\Convert.vb" />
+    <Compile Include="Modules\CurrencyManager.vb" />
+    <Compile Include="Modules\DataManager.vb" />
+    <Compile Include="Modules\Earth.vb" />
+    <Compile Include="Modules\Extension.vb" />
+    <Compile Include="Modules\FeedRSSManager.vb" />
+    <Compile Include="Modules\FileManager.vb" />
+    <Compile Include="Modules\ForumManager.vb" />
+    <Compile Include="Modules\global.vb" />
+    <Compile Include="Modules\ImageManager.vb" />
+    <Compile Include="Modules\LanguageManager.vb" />
+    <Compile Include="Modules\MenuManager.vb" />
+    <Compile Include="Modules\MessengerManager.vb" />
+    <Compile Include="Modules\Navigator.vb" />
+    <Compile Include="Modules\NewsManager.vb" />
+    <Compile Include="Modules\OEM.vb" />
+    <Compile Include="Modules\Pay.vb" />
+    <Compile Include="Modules\PDF.vb" />
+    <Compile Include="Modules\Persistent.vb" />
+    <Compile Include="Modules\PhotoManager.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Pipeline.vb" />
+    <Compile Include="Modules\PluginManager.vb" />
+    <Compile Include="Modules\Poll.vb" />
+    <Compile Include="Modules\Polling.vb" />
+    <Compile Include="Modules\Search.vb" />
+    <Compile Include="Modules\Session.vb" />
+    <Compile Include="Modules\Sitemap.vb" />
+    <Compile Include="Modules\skype.vb" />
+    <Compile Include="Modules\Sms.vb" />
+    <Compile Include="Modules\Tables.vb" />
+    <Compile Include="Modules\trackback.vb" />
+    <Compile Include="Modules\TwitterManager.vb" />
+    <Compile Include="Modules\VideoManager.vb" />
+    <Compile Include="Modules\WeatherManager.vb" />
+    <Compile Include="Modules\WebComponents.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\zip.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pagesmanager.aspx.designer.vb">
+      <DependentUpon>pagesmanager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagesmanager.aspx.vb">
+      <DependentUpon>pagesmanager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pay.aspx.designer.vb">
+      <DependentUpon>pay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pay.aspx.vb">
+      <DependentUpon>pay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhotoOperations.ascx.designer.vb">
+      <DependentUpon>PhotoOperations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoOperations.ascx.vb">
+      <DependentUpon>PhotoOperations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plugins\3dGallery.vb" />
+    <Compile Include="Plugins\AddCustomButtons.vb" />
+    <Compile Include="Plugins\AddHtmlCode.vb" />
+    <Compile Include="Plugins\AdSense.vb" />
+    <Compile Include="Plugins\AllNetworkPluginEnable.vb" />
+    <Compile Include="Plugins\BeckgroundSlideshow.vb" />
+    <Compile Include="Plugins\BlogrollTopForumUser.vb" />
+    <Compile Include="Plugins\ChatRobot.vb" />
+    <Compile Include="Plugins\Clock.vb" />
+    <Compile Include="Plugins\Donate.vb" />
+    <Compile Include="Plugins\FacebookLikeFlyingButton.vb" />
+    <Compile Include="Plugins\Footer.vb" />
+    <Compile Include="Plugins\Redirect.vb" />
+    <Compile Include="Plugins\Robots.vb" />
+    <Compile Include="Plugins\ShareButton.vb" />
+    <Compile Include="Plugins\ShowcaseHomePage.vb" />
+    <Compile Include="Plugins\SkinCustomization.vb" />
+    <Compile Include="Plugins\Snowfall.vb" />
+    <Compile Include="Plugins\YouTubeChannel.vb" />
+    <Compile Include="Poll.aspx.designer.vb">
+      <DependentUpon>Poll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Poll.aspx.vb">
+      <DependentUpon>Poll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="profile.aspx.designer.vb">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="profile.aspx.vb">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="profilemanager.aspx.designer.vb">
+      <DependentUpon>profilemanager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="profilemanager.aspx.vb">
+      <DependentUpon>profilemanager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="script.aspx.designer.vb">
+      <DependentUpon>script.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="script.aspx.vb">
+      <DependentUpon>script.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="search.aspx.designer.vb">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="search.aspx.vb">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service References\SendSMS\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="setup.aspx.designer.vb">
+      <DependentUpon>setup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="setup.aspx.vb">
+      <DependentUpon>setup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="showphoto.aspx.designer.vb">
+      <DependentUpon>showphoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="showphoto.aspx.vb">
+      <DependentUpon>showphoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sms.aspx.designer.vb">
+      <DependentUpon>sms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sms.aspx.vb">
+      <DependentUpon>sms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thumbnails.aspx.designer.vb">
+      <DependentUpon>thumbnails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="thumbnails.aspx.vb">
+      <DependentUpon>thumbnails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="translator.aspx.designer.vb">
+      <DependentUpon>translator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="translator.aspx.vb">
+      <DependentUpon>translator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uploadphoto.aspx.designer.vb">
+      <DependentUpon>uploadphoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uploadphoto.aspx.vb">
+      <DependentUpon>uploadphoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utility.aspx.designer.vb">
+      <DependentUpon>utility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="utility.aspx.vb">
+      <DependentUpon>utility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewimg.aspx.designer.vb">
+      <DependentUpon>viewimg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewimg.aspx.vb">
+      <DependentUpon>viewimg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewthumb.aspx.designer.vb">
+      <DependentUpon>viewthumb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewthumb.aspx.vb">
+      <DependentUpon>viewthumb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Service References\SendSMS\sendsmsworld.wsdl">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SendSMS\" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64109</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64046/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

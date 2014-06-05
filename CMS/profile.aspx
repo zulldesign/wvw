@@ -1,0 +1,1 @@
+<%@ Page Language="VB" AutoEventWireup="false" Inherits="CMS.Profile" Codebehind="profile.aspx.vb" %>
