@@ -1,0 +1,48 @@
+title
+	{
+	color : #003366;
+	font-weight : bold;
+	font-family: tahoma, verdana, arial-black;
+	font-size : 16px;
+	line-height: 18px;
+	}
+
+item
+	{
+	line-height: 16px;
+	background-color: #FFFFEE;
+	}
+
+language
+	{
+	font-size : 6px;
+	color : #FFFFFF;
+	}
+
+description
+	{
+	color : #003366;
+	font-family: tahoma, verdana, arial-black;
+	font-size : 12px;
+	line-height: 12px;
+	}
+
+link
+	{
+	margin-top: 10px;
+	text-align: right;
+	color : #FF4444;
+	font-family: tahoma, verdana, arial-black;
+	font-size : 12px;
+	line-height: 12px;
+	}
+
+link:before
+	{
+	line-height: 20px;
+	}
+
+description:after 
+	{
+	content: "										";
+	}
