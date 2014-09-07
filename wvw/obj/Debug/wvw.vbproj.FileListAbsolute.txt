@@ -1,0 +1,8 @@
+C:\Users\User\Documents\Visual Studio 2012\Projects\wvw\wvw\bin\wvw.dll
+C:\Users\User\Documents\Visual Studio 2012\Projects\wvw\wvw\bin\wvw.pdb
+C:\Users\User\Documents\Visual Studio 2012\Projects\wvw\wvw\bin\wvw.xml
+C:\Users\User\Documents\Visual Studio 2012\Projects\wvw\wvw\obj\Debug\wvw.Resources.resources
+C:\Users\User\Documents\Visual Studio 2012\Projects\wvw\wvw\obj\Debug\wvw.vbproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2012\Projects\wvw\wvw\obj\Debug\wvw.dll
+C:\Users\User\Documents\Visual Studio 2012\Projects\wvw\wvw\obj\Debug\wvw.xml
+C:\Users\User\Documents\Visual Studio 2012\Projects\wvw\wvw\obj\Debug\wvw.pdb
